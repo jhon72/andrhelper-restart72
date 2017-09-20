@@ -1,0 +1,47 @@
+/*Оформление таблицы заголовка*/
+
+.main1 { 
+    background: lightgrey;
+    padding: 5px;
+    padding-right: 25px; 
+    border: solid 1px black;    
+    position: relative
+    width: 100%;
+    height: 100%;
+}
+    
+.main2 { 
+    background: lightgrey;
+    padding: 5px;
+    padding-right: 25px; 
+    border: solid 1px black;    
+    position: relative
+    width: 100%;
+    height: 100%;
+    color: red;
+    
+}
+
+/*Блоки*/
+
+#glaw{
+    display:inline;
+    width:880px;
+}
+
+.blok2, {
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,1.2) 0px 1px 3px;
+}
+
+.blok2{
+    margin:6px 3px 3px 3px;
+    background: #F0FCE8;
+    padding: 5px;
+    text-align: center;
+    position: relative
+    width: 100%;
+    height: 100%;
+}
+
+/**/
