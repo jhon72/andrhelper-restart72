@@ -1,0 +1,134 @@
+/*Стиль навигационного меню*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: blue;} /*#feb386*/
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: lightblue;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+/*Оформление заголовков*/
+
+.section-title h2:before {
+    background-image: url("img/divider-top.png");
+    height: 8px;
+    top: 0;
+    width: 334px;
+}
+.section-title h2:before, .section-title h2:after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.section-title h2:after {
+    background-image: url("img/divider.png");
+    bottom: 0;
+    height: 6px;
+    width: 334px;
+}
+.section-title h2:before, .section-title h2:after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.section-title h2, h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: normal;
+}
+.section-title h2 {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #3a3a3a;
+    font-family: "Times New Roman";
+    font-size: 19px;
+    letter-spacing: 7px;
+    padding: 15px 0 13px;
+    position: relative;
+    text-transform: uppercase;
+}
+.section-title h2 {
+    line-height: 1;
+    margin: 0;
+}
+
+/*Кнопка вверх*/
+
+.topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+
+/*Цитата*/
+
+blockquote {
+    margin: 1.5em 0;
+    padding: 0.5em 15px;
+    line-height: 1.5;
+    background: #f9f9f9;
+    border-left: 2px solid #ccc;
+}
